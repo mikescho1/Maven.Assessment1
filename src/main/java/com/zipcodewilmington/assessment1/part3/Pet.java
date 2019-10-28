@@ -13,15 +13,16 @@ public abstract class Pet implements Animal {
      * by default, pet has age of 0; name of "";
      */
     public Pet() {
-        this("", 0)
+        this("", 0);
     }
 
     /**
      * @param name name of this pet
      */
     public Pet(String name) {
+        this.age = age;
         this.name = name;
-        this(0);
+
     }
 
 
@@ -29,8 +30,9 @@ public abstract class Pet implements Animal {
      * @param age age of this pet
      */
     public Pet(int age) {
-        this.age = age;
         this("");
+        this.age = age;
+
     }
 
     /**
