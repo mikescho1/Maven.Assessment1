@@ -12,7 +12,7 @@ public class IntegerUtils {
      */
     public static Integer getSumOfN(Integer n) {
         Integer sum = 0;
-        for(Integer i = 0; i <= n; i++)  {
+        for (Integer i = 0; i <= n; i++) {
             sum += i;
         }
         return sum;
@@ -24,7 +24,7 @@ public class IntegerUtils {
      */
     public static Integer getProductOfN(Integer n) {
         Integer product = 1;
-        for(Integer i = 1; i <= n; i++)  {
+        for (Integer i = 1; i <= n; i++) {
             product *= i;
         }
         return product;
@@ -35,6 +35,13 @@ public class IntegerUtils {
      * @return integer with identical digits in the reverse order
      */
     public static Integer reverseDigits(Integer val) {
-        return null;
+
+//        Integer finalNum = val;
+Integer num = Integer.valueOf(val);
+        for (Integer i = Integer.valueOf(val); i >= 1; i--) {
+            num += Integer.valueOf(i);
+        }
+
+        return num;
     }
 }

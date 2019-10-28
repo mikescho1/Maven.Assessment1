@@ -13,7 +13,19 @@ public class RockPaperSissorsEvaluator {
      * @return the respective winning move
      */
     public String getWinningMove(String handSign) {
-        return null;
+        String winner = "";
+
+        switch (handSign) {
+            case ROCK:
+                winner += "paper";
+                break;
+            case PAPER:
+                winner += "scissor";
+                break;
+            case SCISSOR:
+                winner += "rock";
+        }
+        return winner;
     }
 
     /**
