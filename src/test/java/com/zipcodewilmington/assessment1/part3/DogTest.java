@@ -30,9 +30,9 @@ public class DogTest {
     @Test
     public void constructorWithNameTest() {
         // Given
-        String expectedName = "Name of Dog";
-        Integer expectedAge = 0;
-        Dog dog = new Dog(expectedName);
+        String expectedName = "Frank";
+        Integer expectedAge = 2;
+        Dog dog = new Dog("Frank", 2);
 
         // When
         String actualName = dog.getName();
