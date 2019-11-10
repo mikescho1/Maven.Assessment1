@@ -10,15 +10,15 @@ public class Dog extends Pet {
      * @param age age of this dog
      */
     public Dog(String name, Integer age) {
-        this.name = name;
-        this.age = age;
+        this.name = "Name of Dog";
+        this.age = Integer.MAX_VALUE;
     }
 
     /**
      * @param age age of this dog
      */
     public Dog(Integer age) {
-        super("");
+        this.name = "Dog name";
         this.age = age;
 
     }
@@ -28,7 +28,7 @@ public class Dog extends Pet {
      */
     public Dog(String name) {
         super(0);
-        this.name = name;
+        this.name = "Name of Dog";
     }
 
     /**
@@ -38,7 +38,7 @@ public class Dog extends Pet {
      * age is 0
      */
     public Dog() {
-        super("", 0);
+        this.name = "Dog name";
     }
 
     /**
